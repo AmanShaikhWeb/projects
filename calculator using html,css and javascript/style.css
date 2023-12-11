@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@500&display=swap');
+
+html, body{
+ height: 100%;
+ width: 100%;
+ font-family: 'Libre Baskerville', serif;
+font-family: 'Poppins', sans-serif;
+
+}
+
+.button{
+    padding: 20px;
+    width: 60px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.row{
+    margin: 8px 0;
+}
+
+.row input{
+    font-size: 20px;
+    width: 280px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
