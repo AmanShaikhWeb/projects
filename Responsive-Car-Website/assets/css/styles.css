@@ -108,6 +108,22 @@ img {
   overflow: hidden;
 }
 
+.shape{
+  background-color: hsla(219, 33%, 32%, .5);
+  filter: blur(112px); 
+  border-radius: 50%;
+}
+
+.shape__big{
+  width: 400px;
+  height: 400px;
+}
+
+.shape__small{
+  width: 300px;
+  height: 300px;
+}
+
 /*=============== HEADER & NAV ===============*/
 .header{
   width: 100%;
@@ -261,11 +277,82 @@ img {
   font-size: .625rem;
   font-weight: 400;
   color: var(--text-color-light);
-  
 }
 
-/* Button animate */
+.home__car-data{
+  text-align: center;
+}
 
+.home__car-number{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.home__car-icon{
+  background-color: var(--container-color);
+  border-radius: 50%;
+  padding: .376rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .875rem;
+  margin-bottom: .75rem;
+}
+
+.home__button{
+  position: relative;
+  border: 2px solid hsl(158, 89%, 30%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
+
+.home__button::before{
+  content: '';
+  border: 2px solid hsl(158, 98%, 43%);
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  transition: .3s;
+  animation: button 3s infinite;
+}
+
+.home .shape__big,
+.home .shape__small{
+  position: absolute;
+}
+
+.home .shape__big{
+  left: -9rem;
+  top: -4rem;
+}
+
+.home .shape__small{
+  right: -10rem;
+  bottom: 3rem;
+}
+
+
+
+/* Button animate */
+@keyframes button{
+  0%{
+    box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  }
+  50%{
+    box-shadow: 0 0 24px hsl(158, 98%, 43%);
+  }
+}
 
 /*=============== BUTTON ===============*/
 
