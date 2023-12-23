@@ -487,6 +487,25 @@ img {
 .popular__price{
   font-style: var(--h3-font-size);
 }
+
+.popular__button{
+  border: none;
+  outline: none;
+  padding: .75rem 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.popular__button i{
+  font-style: 1.25rem;
+}
+
+.popular__card:hover .popular__img{
+  transform: translate(-.25rem);
+}
 /* Swiper class */
 
 

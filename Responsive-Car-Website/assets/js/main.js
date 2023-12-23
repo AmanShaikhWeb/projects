@@ -36,7 +36,12 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== POPULAR SWIPER ===============*/
-
+let swiperPopular = new Swiper(".popular__container", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });
 
 /*=============== MIXITUP FILTER FEATURED ===============*/
 
