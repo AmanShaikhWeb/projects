@@ -830,7 +830,7 @@ img {
 }
 
 .footer__link,
-.footer__spcial-link{
+.footer__social-link{
   color: var(--text-color);
   transition: .3s;
 }
