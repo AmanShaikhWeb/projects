@@ -696,7 +696,14 @@ img {
 }
 
 /* Active link featured */
+.active-featured{
+  background-color: var(--first-color);
+}
 
+.active-featured span,
+.active-featured img{
+  opacity: 1;
+}
 
 /*=============== OFFER ===============*/
 
